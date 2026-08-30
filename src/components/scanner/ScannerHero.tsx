@@ -20,7 +20,6 @@ export const ScannerHero: React.FC<ScannerHeroProps> = ({
   isAnalyzing
 }) => {
   const [searchQuery, setSearchQuery] = useState('');
-  const hasApiKey = !!((import.meta as any).env?.VITE_GEMINI_API_KEY || localStorage.getItem('ewaste_gemini_api_key'));
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -91,14 +90,10 @@ export const ScannerHero: React.FC<ScannerHeroProps> = ({
 
           <Badge
             variant="outline"
-            className={`px-3.5 py-1.5 text-xs border bg-zinc-950/80 backdrop-blur-md ${
-              hasApiKey
-                ? 'text-emerald-400 border-emerald-900'
-                : 'text-amber-400 border-amber-900'
-            }`}
+            className="px-3.5 py-1.5 text-xs text-emerald-400 border-emerald-900 bg-zinc-950/80 backdrop-blur-md"
           >
             <Sparkles className="w-3.5 h-3.5 mr-1" />
-            <span>{hasApiKey ? 'Gemini AI Active' : 'Setup AI Vision'}</span>
+            <span>On-Device AI — No API Key</span>
           </Badge>
         </div>
 
@@ -131,7 +126,7 @@ export const ScannerHero: React.FC<ScannerHeroProps> = ({
                 </div>
                 <div className="text-left">
                   <div className="leading-tight font-black">Scan Your E-Waste</div>
-                  <div className="text-[11px] text-zinc-600 font-normal">{hasApiKey ? 'Gemini AI will identify what it is' : 'Setup AI key first'}</div>
+                  <div className="text-[11px] text-zinc-600 font-normal">MobileNet AI identifies what it is</div>
                 </div>
               </div>
               <Sparkles className="w-5 h-5 text-zinc-700" />
@@ -149,7 +144,7 @@ export const ScannerHero: React.FC<ScannerHeroProps> = ({
               </div>
               <div className="text-left">
                 <div className="leading-tight font-black">Upload Device Photo</div>
-                <div className="text-[11px] text-zinc-400 font-normal">{hasApiKey ? 'AI will analyze & classify the image' : 'AI key required for image analysis'}</div>
+                <div className="text-[11px] text-zinc-400 font-normal">AI runs locally — no upload to any server</div>
               </div>
             </Button>
           </div>

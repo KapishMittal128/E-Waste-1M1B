@@ -16,7 +16,6 @@ import { ScanResultCard } from './components/scanner/ScanResultCard';
 import { RecyclerLocator } from './components/recyclers/RecyclerLocator';
 import { SchoolMode } from './components/school/SchoolMode';
 import { TrustAndVerification } from './components/trust/TrustAndVerification';
-import { ApiKeyPrompt } from './components/scanner/ApiKeyPrompt';
 import { NotEWasteCard } from './components/scanner/NotEWasteCard';
 
 import { PreCallModal } from './components/modals/PreCallModal';
@@ -26,7 +25,7 @@ import { RecyclerDossierModal } from './components/modals/RecyclerDossierModal';
 import { HazardGuideModal } from './components/modals/HazardGuideModal';
 import { Heart } from 'lucide-react';
 
-type ScanState = 'idle' | 'analyzing' | 'result' | 'not_ewaste' | 'no_api_key';
+type ScanState = 'idle' | 'analyzing' | 'result' | 'not_ewaste';
 
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('scanner');
@@ -88,8 +87,6 @@ export const App: React.FC = () => {
       if (err instanceof NotEWasteError) {
         setNotEWasteDescription(err.description);
         setScanState('not_ewaste');
-      } else if (err?.message === 'NO_API_KEY') {
-        setScanState('no_api_key');
       } else {
         console.error(err);
         alert('Analysis failed. Please try again or use the manual search below.');
@@ -141,9 +138,6 @@ export const App: React.FC = () => {
   };
 
   const renderScannerContent = () => {
-    if (scanState === 'no_api_key') {
-      return <ApiKeyPrompt onRetry={handleReset} />;
-    }
     if (scanState === 'not_ewaste') {
       return <NotEWasteCard description={notEWasteDescription} onTryAgain={handleReset} />;
     }
