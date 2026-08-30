@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black text-zinc-100 antialiased overflow-x-hidden selection:bg-zinc-800 selection:text-white;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Background Grid / Dots */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.bg-radial-gradient {
+  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.06) 0%, rgba(0, 0, 0, 0) 70%);
+}
+
+/* 21st.dev & React Bits Style Component Classes */
+.card-spotlight {
+  @apply relative rounded-3xl bg-zinc-900/60 backdrop-blur-2xl border border-white/10 transition-all duration-300 hover:border-white/20 hover:bg-zinc-900/80 shadow-2xl;
+}
+
+.card-spotlight-subtle {
+  @apply relative rounded-2xl bg-zinc-950/80 border border-zinc-800/80 transition-all duration-300 hover:border-zinc-700 hover:bg-zinc-900/60;
+}
+
+.glass-pill {
+  @apply px-3 py-1 rounded-full bg-zinc-900/80 backdrop-blur-md border border-white/10 text-xs font-semibold text-zinc-300;
+}
+
+.btn-primary-shimmer {
+  @apply relative overflow-hidden bg-white text-black font-extrabold transition-all duration-300 hover:bg-zinc-100 hover:scale-[1.01] active:scale-[0.98] shadow-lg shadow-white/10;
+}
+
+.btn-secondary-dark {
+  @apply bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-zinc-200 font-semibold transition-all duration-200 active:scale-[0.98];
+}
+
+.btn-ghost-dark {
+  @apply text-zinc-400 hover:text-white hover:bg-zinc-800 rounded-xl transition-colors;
+}
+
+.glass-input-dark {
+  @apply bg-zinc-950/90 border border-zinc-800 rounded-xl px-4 py-3 text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-zinc-500 focus:ring-1 focus:ring-zinc-500 transition-all;
+}
+
+/* Custom Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Leaflet Map Custom Monochrome Overrides */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  z-index: 10;
+  background-color: #09090b !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #18181b !important;
+  color: #f4f4f5 !important;
+  border: 1px solid #3f3f46 !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8) !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.5 !important;
+}
+
+.leaflet-popup-tip {
+  background: #18181b !important;
+  border: 1px solid #3f3f46 !important;
+}
+
+/* Monochrome Scanner Laser Line */
+@keyframes monochromeLaserSweep {
+  0% {
+    top: 5%;
+    opacity: 0.7;
+  }
+  50% {
+    top: 90%;
+    opacity: 1;
+  }
+  100% {
+    top: 5%;
+    opacity: 0.7;
+  }
+}
+
+.scanner-laser-mono {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffffff, #a1a1aa, #ffffff, transparent);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.4);
+  animation: monochromeLaserSweep 2.5s ease-in-out infinite;
+}
