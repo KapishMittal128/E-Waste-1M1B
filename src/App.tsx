@@ -5,7 +5,7 @@ import {
   Recycler 
 } from './types';
 import { StorageService } from './services/storage';
-import { AIVisionService } from './services/aiVision';
+import { AIVisionService, NotEWasteError } from './services/aiVision';
 import { GWALIOR_LOCALITIES } from './data/recyclers';
 
 import { Header } from './components/layout/Header';
@@ -16,6 +16,8 @@ import { ScanResultCard } from './components/scanner/ScanResultCard';
 import { RecyclerLocator } from './components/recyclers/RecyclerLocator';
 import { SchoolMode } from './components/school/SchoolMode';
 import { TrustAndVerification } from './components/trust/TrustAndVerification';
+import { ApiKeyPrompt } from './components/scanner/ApiKeyPrompt';
+import { NotEWasteCard } from './components/scanner/NotEWasteCard';
 
 import { PreCallModal } from './components/modals/PreCallModal';
 import { ShareDetailsModal } from './components/modals/ShareDetailsModal';
@@ -24,19 +26,20 @@ import { RecyclerDossierModal } from './components/modals/RecyclerDossierModal';
 import { HazardGuideModal } from './components/modals/HazardGuideModal';
 import { Heart } from 'lucide-react';
 
+type ScanState = 'idle' | 'analyzing' | 'result' | 'not_ewaste' | 'no_api_key';
+
 export const App: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>('scanner');
   const [selectedLocality, setSelectedLocality] = useState<string>(GWALIOR_LOCALITIES[0].name);
 
-  // im so done
+  const [scanState, setScanState] = useState<ScanState>('idle');
   const [isCameraOpen, setIsCameraOpen] = useState(false);
-  const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [analysisResult, setAnalysisResult] = useState<EWasteItemAnalysis | null>(null);
+  const [notEWasteDescription, setNotEWasteDescription] = useState<string>('');
 
   const [filterCategory, setFilterCategory] = useState<EWasteCategory | 'All'>('All');
   const [highlightItemName, setHighlightItemName] = useState<string | undefined>(undefined);
 
-  // modals
   const [activePreCallRecycler, setActivePreCallRecycler] = useState<Recycler | null>(null);
   const [activeShareRecycler, setActiveShareRecycler] = useState<Recycler | null>(null);
   const [activeDossierRecycler, setActiveDossierRecycler] = useState<Recycler | null>(null);
@@ -45,24 +48,17 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     const savedLoc = StorageService.getSavedUserLocation();
-    if (savedLoc) {
-      setSelectedLocality(savedLoc.name);
-    }
+    if (savedLoc) setSelectedLocality(savedLoc.name);
   }, []);
 
   const handleLocalityChange = (locName: string) => {
     setSelectedLocality(locName);
     const found = GWALIOR_LOCALITIES.find(l => l.name === locName);
-    if (found) {
-      StorageService.saveUserLocation(found);
-    }
+    if (found) StorageService.saveUserLocation(found);
   };
 
-  const handleStartCamera = () => {
-    setIsCameraOpen(true);
-  };
+  const handleStartCamera = () => setIsCameraOpen(true);
 
-  // file upload trigger
   const handleUploadImage = () => {
     const input = document.createElement('input');
     input.type = 'file';
@@ -72,9 +68,7 @@ export const App: React.FC = () => {
       if (!file) return;
       const reader = new FileReader();
       reader.onload = () => {
-        if (typeof reader.result === 'string') {
-          handleCaptureImage(reader.result);
-        }
+        if (typeof reader.result === 'string') handleCaptureImage(reader.result);
       };
       reader.readAsDataURL(file);
     };
@@ -83,46 +77,53 @@ export const App: React.FC = () => {
 
   const handleCaptureImage = async (dataUrl: string) => {
     setIsCameraOpen(false);
-    setIsAnalyzing(true);
+    setScanState('analyzing');
     setAnalysisResult(null);
 
     try {
       const result = await AIVisionService.analyzeImage(dataUrl);
       setAnalysisResult(result);
-    } catch (err) {
-      console.error(err);
-      alert('Error analyzing image. Please try again or search manually.');
-    } finally {
-      setIsAnalyzing(false);
+      setScanState('result');
+    } catch (err: any) {
+      if (err instanceof NotEWasteError) {
+        setNotEWasteDescription(err.description);
+        setScanState('not_ewaste');
+      } else if (err?.message === 'NO_API_KEY') {
+        setScanState('no_api_key');
+      } else {
+        console.error(err);
+        alert('Analysis failed. Please try again or use the manual search below.');
+        setScanState('idle');
+      }
     }
   };
 
   const handleSearchManual = async (query: string) => {
-    setIsAnalyzing(true);
+    setScanState('analyzing');
     setAnalysisResult(null);
 
     try {
       const result = await AIVisionService.analyzeImage(undefined, query);
       setAnalysisResult(result);
+      setScanState('result');
     } catch (err) {
       console.error(err);
-    } finally {
-      setIsAnalyzing(false);
+      setScanState('idle');
     }
   };
 
   // THIS WORKS YAYAYA (O(1) hashmap matching)
   const handleSelectPreset = async (presetKey: string) => {
-    setIsAnalyzing(true);
+    setScanState('analyzing');
     setAnalysisResult(null);
 
     try {
       const result = await AIVisionService.analyzeImage(undefined, undefined, presetKey);
       setAnalysisResult(result);
+      setScanState('result');
     } catch (err) {
       console.error(err);
-    } finally {
-      setIsAnalyzing(false);
+      setScanState('idle');
     }
   };
 
@@ -131,6 +132,39 @@ export const App: React.FC = () => {
     setHighlightItemName(itemName);
     setActiveTab('recyclers');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleReset = () => {
+    setScanState('idle');
+    setAnalysisResult(null);
+    setNotEWasteDescription('');
+  };
+
+  const renderScannerContent = () => {
+    if (scanState === 'no_api_key') {
+      return <ApiKeyPrompt onRetry={handleReset} />;
+    }
+    if (scanState === 'not_ewaste') {
+      return <NotEWasteCard description={notEWasteDescription} onTryAgain={handleReset} />;
+    }
+    if (scanState === 'result' && analysisResult) {
+      return (
+        <ScanResultCard
+          analysis={analysisResult}
+          onFindRecyclers={handleFindRecyclersFromScan}
+          onResetScan={handleReset}
+        />
+      );
+    }
+    return (
+      <ScannerHero
+        onStartCamera={handleStartCamera}
+        onUploadImage={handleUploadImage}
+        onSearchManual={handleSearchManual}
+        onSelectPreset={handleSelectPreset}
+        isAnalyzing={scanState === 'analyzing'}
+      />
+    );
   };
 
   return (
@@ -147,21 +181,7 @@ export const App: React.FC = () => {
       <main className="flex-1 pb-24 md:pb-12">
         {activeTab === 'scanner' && (
           <div className="space-y-6">
-            {!analysisResult ? (
-              <ScannerHero
-                onStartCamera={handleStartCamera}
-                onUploadImage={handleUploadImage}
-                onSearchManual={handleSearchManual}
-                onSelectPreset={handleSelectPreset}
-                isAnalyzing={isAnalyzing}
-              />
-            ) : (
-              <ScanResultCard
-                analysis={analysisResult}
-                onFindRecyclers={handleFindRecyclersFromScan}
-                onResetScan={() => setAnalysisResult(null)}
-              />
-            )}
+            {renderScannerContent()}
           </div>
         )}
 
@@ -178,13 +198,8 @@ export const App: React.FC = () => {
           />
         )}
 
-        {activeTab === 'school' && (
-          <SchoolMode />
-        )}
-
-        {activeTab === 'trust' && (
-          <TrustAndVerification />
-        )}
+        {activeTab === 'school' && <SchoolMode />}
+        {activeTab === 'trust' && <TrustAndVerification />}
       </main>
 
       <footer className="hidden md:block border-t border-zinc-800/80 bg-black py-8 text-xs text-zinc-400">
@@ -203,17 +218,11 @@ export const App: React.FC = () => {
           </div>
 
           <div className="flex items-center gap-4 text-xs font-semibold">
-            <button
-              onClick={() => setActiveTab('trust')}
-              className="text-zinc-400 hover:text-white transition-colors"
-            >
+            <button onClick={() => setActiveTab('trust')} className="text-zinc-400 hover:text-white transition-colors">
               MPPCB Verification Protocol
             </button>
             <span>•</span>
-            <button
-              onClick={() => setIsHazardGuideOpen(true)}
-              className="text-zinc-300 hover:text-white transition-colors"
-            >
+            <button onClick={() => setIsHazardGuideOpen(true)} className="text-zinc-300 hover:text-white transition-colors">
               Hazardous E-Waste Safety Guide
             </button>
           </div>
@@ -228,36 +237,11 @@ export const App: React.FC = () => {
         onCaptureImage={handleCaptureImage}
       />
 
-      <PreCallModal
-        isOpen={!!activePreCallRecycler}
-        recycler={activePreCallRecycler}
-        onClose={() => setActivePreCallRecycler(null)}
-      />
-
-      <ShareDetailsModal
-        isOpen={!!activeShareRecycler}
-        recycler={activeShareRecycler}
-        itemAnalysis={analysisResult}
-        userLocality={selectedLocality}
-        onClose={() => setActiveShareRecycler(null)}
-      />
-
-      <RecyclerDossierModal
-        isOpen={!!activeDossierRecycler}
-        recycler={activeDossierRecycler}
-        onClose={() => setActiveDossierRecycler(null)}
-      />
-
-      <ReportRecyclerModal
-        isOpen={!!activeReportRecycler}
-        recycler={activeReportRecycler}
-        onClose={() => setActiveReportRecycler(null)}
-      />
-
-      <HazardGuideModal
-        isOpen={isHazardGuideOpen}
-        onClose={() => setIsHazardGuideOpen(false)}
-      />
+      <PreCallModal isOpen={!!activePreCallRecycler} recycler={activePreCallRecycler} onClose={() => setActivePreCallRecycler(null)} />
+      <ShareDetailsModal isOpen={!!activeShareRecycler} recycler={activeShareRecycler} itemAnalysis={analysisResult} userLocality={selectedLocality} onClose={() => setActiveShareRecycler(null)} />
+      <RecyclerDossierModal isOpen={!!activeDossierRecycler} recycler={activeDossierRecycler} onClose={() => setActiveDossierRecycler(null)} />
+      <ReportRecyclerModal isOpen={!!activeReportRecycler} recycler={activeReportRecycler} onClose={() => setActiveReportRecycler(null)} />
+      <HazardGuideModal isOpen={isHazardGuideOpen} onClose={() => setIsHazardGuideOpen(false)} />
 
     </div>
   );
