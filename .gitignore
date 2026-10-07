@@ -31,3 +31,16 @@ dist-ssr
 # Temporary / ide files
 .gemini
 .system_generated
+
+# Python Virtual Environment & Bytecode
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pt
+*.pth
+
+# Large Raw Datasets (managed via download scripts)
+data/ewastenet_raw/
+data/trashnet_raw/
+data/raw_kaggle/

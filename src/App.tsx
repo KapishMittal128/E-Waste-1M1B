@@ -9,7 +9,9 @@ import { AIVisionService, NotEWasteError } from './services/aiVision';
 import { GWALIOR_LOCALITIES } from './data/recyclers';
 
 import { Header } from './components/layout/Header';
-import { BottomNav } from './components/layout/BottomNav';
+import { FloatingDock, NavTab } from './components/navigation/FloatingDock';
+import { Aurora } from './components/reactbits/Aurora';
+import { Particles } from './components/reactbits/Particles';
 import { ScannerHero } from './components/scanner/ScannerHero';
 import { CameraModal } from './components/scanner/CameraModal';
 import { ScanResultCard } from './components/scanner/ScanResultCard';
@@ -23,7 +25,6 @@ import { ShareDetailsModal } from './components/modals/ShareDetailsModal';
 import { ReportRecyclerModal } from './components/modals/ReportRecyclerModal';
 import { RecyclerDossierModal } from './components/modals/RecyclerDossierModal';
 import { HazardGuideModal } from './components/modals/HazardGuideModal';
-import { Heart } from 'lucide-react';
 
 type ScanState = 'idle' | 'analyzing' | 'result' | 'not_ewaste';
 
@@ -58,18 +59,21 @@ export const App: React.FC = () => {
 
   const handleStartCamera = () => setIsCameraOpen(true);
 
+  const handleProcessFile = (file: File) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      if (typeof reader.result === 'string') handleCaptureImage(reader.result);
+    };
+    reader.readAsDataURL(file);
+  };
+
   const handleUploadImage = () => {
     const input = document.createElement('input');
     input.type = 'file';
     input.accept = 'image/*';
     input.onchange = (e: any) => {
       const file = e.target?.files?.[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = () => {
-        if (typeof reader.result === 'string') handleCaptureImage(reader.result);
-      };
-      reader.readAsDataURL(file);
+      if (file) handleProcessFile(file);
     };
     input.click();
   };
@@ -109,7 +113,6 @@ export const App: React.FC = () => {
     }
   };
 
-  // THIS WORKS YAYAYA (O(1) hashmap matching)
   const handleSelectPreset = async (presetKey: string) => {
     setScanState('analyzing');
     setAnalysisResult(null);
@@ -137,6 +140,21 @@ export const App: React.FC = () => {
     setNotEWasteDescription('');
   };
 
+  const mapActiveTabToNavTab = (tab: string): NavTab => {
+    if (tab === 'recyclers') return 'radar';
+    if (tab === 'school') return 'campus';
+    if (tab === 'trust') return 'trust';
+    return 'scanner';
+  };
+
+  const handleDockTabChange = (navTab: NavTab) => {
+    if (navTab === 'radar') setActiveTab('recyclers');
+    else if (navTab === 'campus') setActiveTab('school');
+    else if (navTab === 'trust') setActiveTab('trust');
+    else setActiveTab('scanner');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const renderScannerContent = () => {
     if (scanState === 'not_ewaste') {
       return <NotEWasteCard description={notEWasteDescription} onTryAgain={handleReset} />;
@@ -154,6 +172,7 @@ export const App: React.FC = () => {
       <ScannerHero
         onStartCamera={handleStartCamera}
         onUploadImage={handleUploadImage}
+        onUploadFile={handleProcessFile}
         onSearchManual={handleSearchManual}
         onSelectPreset={handleSelectPreset}
         isAnalyzing={scanState === 'analyzing'}
@@ -162,17 +181,19 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-zinc-100 flex flex-col font-sans">
-      
+    <div className="min-h-screen bg-[#08090C] text-zinc-100 flex flex-col font-sans relative overflow-x-hidden selection:bg-emerald-500/20 selection:text-emerald-200">
+      {/* Ambient React Bits Aurora & Particle Canvas */}
+      <Aurora speed={0.45} />
+      <Particles particleCount={35} particleColor="255, 255, 255" speed={0.25} />
+
       <Header
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        onNavigateHome={() => setActiveTab('scanner')}
         selectedLocality={selectedLocality}
         setSelectedLocality={handleLocalityChange}
         onOpenHazardGuide={() => setIsHazardGuideOpen(true)}
       />
 
-      <main className="flex-1 pb-24 md:pb-12">
+      <main className="flex-1 pb-28 md:pb-24 relative z-10">
         {activeTab === 'scanner' && (
           <div className="space-y-6">
             {renderScannerContent()}
@@ -196,35 +217,41 @@ export const App: React.FC = () => {
         {activeTab === 'trust' && <TrustAndVerification />}
       </main>
 
-      <footer className="hidden md:block border-t border-zinc-800/80 bg-black py-8 text-xs text-zinc-400">
+      {/* Floating Frosted Glass Command Dock */}
+      <FloatingDock
+        activeTab={mapActiveTabToNavTab(activeTab)}
+        onTabChange={handleDockTabChange}
+      />
+
+      {/* Footer */}
+      <footer className="border-t border-zinc-800/80 bg-[#070707]/90 backdrop-blur-md py-8 text-xs text-zinc-400 relative z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="space-y-1 text-center sm:text-left">
-            <div className="font-extrabold text-white flex items-center gap-2 justify-center sm:justify-start">
-              <span>EWaste Off • Gwalior Action Tool</span>
-              <span className="text-zinc-600">|</span>
-              <span className="text-zinc-300 font-medium inline-flex items-center gap-1">
-                made with <Heart className="w-3 h-3 text-red-500 fill-red-500" /> by <strong className="text-white">Kapish Mittal</strong>
+          <div className="space-y-1 text-center sm:text-left font-mono">
+            <div className="font-bold text-white flex items-center gap-2 justify-center sm:justify-start">
+              <span>EWASTE OFF // GWALIOR REGION</span>
+              <span className="text-zinc-600">•</span>
+              <span className="text-zinc-400 font-medium">
+                LEAD: <strong className="text-white">KAPISH MITTAL</strong>
               </span>
             </div>
-            <p className="text-[11px] text-zinc-500">
-              Connecting Gwalior citizens and institutions directly with MPPCB-authorized e-waste recyclers.
+            <p className="text-[11px] text-zinc-500 font-sans">
+              Autonomous on-device e-waste edge classification & MPPCB authorized recycler verification protocol.
             </p>
           </div>
 
-          <div className="flex items-center gap-4 text-xs font-semibold">
+          <div className="flex items-center gap-4 text-xs font-mono">
             <button onClick={() => setActiveTab('trust')} className="text-zinc-400 hover:text-white transition-colors">
-              MPPCB Verification Protocol
+              VERIFICATION PROTOCOL
             </button>
-            <span>•</span>
+            <span className="text-zinc-600">•</span>
             <button onClick={() => setIsHazardGuideOpen(true)} className="text-zinc-300 hover:text-white transition-colors">
-              Hazardous E-Waste Safety Guide
+              HAZARD PROTOCOL
             </button>
           </div>
         </div>
       </footer>
 
-      <BottomNav activeTab={activeTab} setActiveTab={setActiveTab} />
-
+      {/* Modals */}
       <CameraModal
         isOpen={isCameraOpen}
         onClose={() => setIsCameraOpen(false)}
@@ -236,7 +263,6 @@ export const App: React.FC = () => {
       <RecyclerDossierModal isOpen={!!activeDossierRecycler} recycler={activeDossierRecycler} onClose={() => setActiveDossierRecycler(null)} />
       <ReportRecyclerModal isOpen={!!activeReportRecycler} recycler={activeReportRecycler} onClose={() => setActiveReportRecycler(null)} />
       <HazardGuideModal isOpen={isHazardGuideOpen} onClose={() => setIsHazardGuideOpen(false)} />
-
     </div>
   );
 };

@@ -88,11 +88,11 @@ export const LeafletMapView: React.FC<LeafletMapViewProps> = ({
             display:flex; 
             align-items:center; 
             justify-content:center; 
-            border:2px solid #27272a;
-            box-shadow:0 10px 25px rgba(0,0,0,0.8);
+            border:2px solid #ffffff;
+            box-shadow:0 0 15px rgba(255,255,255,0.4);
             cursor:pointer;
           ">
-            ⚡
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
           </div>
         `,
         iconSize: [32, 32],
@@ -104,12 +104,12 @@ export const LeafletMapView: React.FC<LeafletMapViewProps> = ({
 
       marker.bindPopup(`
         <div style="padding:14px; font-family:sans-serif; min-width:210px; background:#18181b; color:#fff; border-radius:12px;">
-          <div style="display:inline-block; font-size:9px; font-weight:bold; color:#ffffff; background:#27272a; padding:2px 6px; border-radius:4px; margin-bottom:6px;">
+          <div style="display:inline-block; font-size:9px; font-weight:bold; color:#000000; background:#ffffff; padding:2px 6px; border-radius:4px; margin-bottom:6px;">
             ${rec.authorizationTier}
           </div>
           <div style="font-size:13px; font-weight:bold; color:#ffffff; margin-bottom:4px;">${rec.name}</div>
           <div style="font-size:11px; color:#a1a1aa; margin-bottom:8px;">${rec.address}</div>
-          <div style="font-size:11px; font-weight:bold; color:#ffffff;">📞 ${rec.phone}</div>
+          <div style="font-size:11px; font-weight:bold; color:#ffffff;">TEL: ${rec.phone}</div>
           <div style="font-size:10px; color:#71717a; margin-top:4px;">${rec.openingHours}</div>
         </div>
       `);
@@ -126,17 +126,19 @@ export const LeafletMapView: React.FC<LeafletMapViewProps> = ({
       <div ref={mapContainerRef} className="w-full h-full" />
       
       {/* legend */}
-      <div className="absolute top-3 right-3 z-[400] p-3.5 rounded-2xl bg-black/90 backdrop-blur-xl border border-zinc-800 text-[11px] space-y-1.5 shadow-2xl">
+      <div className="absolute top-3 right-3 z-[400] p-3.5 rounded-2xl bg-black/90 backdrop-blur-xl border border-zinc-800 text-[11px] space-y-1.5 shadow-2xl font-mono">
         <div className="font-bold text-zinc-300 uppercase tracking-wider text-[10px] mb-1">
-          Gwalior Map Legend
+          GWALIOR MAP LEGEND
         </div>
         <div className="flex items-center gap-2 text-zinc-300">
           <div className="w-3 h-3 rounded-full bg-white border border-black" />
-          <span>Your Selected Location</span>
+          <span>SELECTED LOCATION</span>
         </div>
         <div className="flex items-center gap-2 text-zinc-300">
-          <div className="w-3 h-3 rounded-md bg-zinc-200 border border-zinc-600 text-black text-[9px] flex items-center justify-center font-bold">⚡</div>
-          <span>MPPCB Verified Recyclers</span>
+          <div className="w-3 h-3 rounded-md bg-white text-black text-[9px] flex items-center justify-center font-bold">
+            <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="#000" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+          </div>
+          <span>MPPCB VERIFIED RECYCLERS</span>
         </div>
       </div>
     </div>

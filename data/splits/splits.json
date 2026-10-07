@@ -1,0 +1,1408 @@
+{
+  "train": [
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_01/SYNTH_audio_equipment_0000.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_01/SYNTH_audio_equipment_0004.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_01/SYNTH_audio_equipment_0008.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_01/SYNTH_audio_equipment_0012.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_01/SYNTH_audio_equipment_0016.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_04/SYNTH_audio_equipment_0003.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_04/SYNTH_audio_equipment_0007.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_04/SYNTH_audio_equipment_0011.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_04/SYNTH_audio_equipment_0015.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_04/SYNTH_audio_equipment_0019.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_01/SYNTH_battery_pack_powerbank_0000.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_01/SYNTH_battery_pack_powerbank_0004.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_01/SYNTH_battery_pack_powerbank_0008.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_01/SYNTH_battery_pack_powerbank_0012.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_01/SYNTH_battery_pack_powerbank_0016.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_04/SYNTH_battery_pack_powerbank_0003.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_04/SYNTH_battery_pack_powerbank_0007.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_04/SYNTH_battery_pack_powerbank_0011.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_04/SYNTH_battery_pack_powerbank_0015.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_04/SYNTH_battery_pack_powerbank_0019.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_01/SYNTH_cable_wire_0000.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_01/SYNTH_cable_wire_0004.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_01/SYNTH_cable_wire_0008.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_01/SYNTH_cable_wire_0012.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_01/SYNTH_cable_wire_0016.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_04/SYNTH_cable_wire_0003.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_04/SYNTH_cable_wire_0007.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_04/SYNTH_cable_wire_0011.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_04/SYNTH_cable_wire_0015.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_04/SYNTH_cable_wire_0019.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_01/SYNTH_charger_adapter_0000.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_01/SYNTH_charger_adapter_0004.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_01/SYNTH_charger_adapter_0008.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_01/SYNTH_charger_adapter_0012.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_01/SYNTH_charger_adapter_0016.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_04/SYNTH_charger_adapter_0003.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_04/SYNTH_charger_adapter_0007.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_04/SYNTH_charger_adapter_0011.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_04/SYNTH_charger_adapter_0015.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_04/SYNTH_charger_adapter_0019.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_01/SYNTH_circuit_board_loose_0000.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_01/SYNTH_circuit_board_loose_0004.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_01/SYNTH_circuit_board_loose_0008.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_01/SYNTH_circuit_board_loose_0012.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_01/SYNTH_circuit_board_loose_0016.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_04/SYNTH_circuit_board_loose_0003.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_04/SYNTH_circuit_board_loose_0007.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_04/SYNTH_circuit_board_loose_0011.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_04/SYNTH_circuit_board_loose_0015.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_04/SYNTH_circuit_board_loose_0019.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_01/SYNTH_computer_equipment_0000.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_01/SYNTH_computer_equipment_0004.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_01/SYNTH_computer_equipment_0008.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_01/SYNTH_computer_equipment_0012.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_01/SYNTH_computer_equipment_0016.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_04/SYNTH_computer_equipment_0003.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_04/SYNTH_computer_equipment_0007.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_04/SYNTH_computer_equipment_0011.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_04/SYNTH_computer_equipment_0015.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_04/SYNTH_computer_equipment_0019.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_01/SYNTH_display_tv_monitor_0000.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_01/SYNTH_display_tv_monitor_0004.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_01/SYNTH_display_tv_monitor_0008.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_01/SYNTH_display_tv_monitor_0012.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_01/SYNTH_display_tv_monitor_0016.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_04/SYNTH_display_tv_monitor_0003.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_04/SYNTH_display_tv_monitor_0007.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_04/SYNTH_display_tv_monitor_0011.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_04/SYNTH_display_tv_monitor_0015.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_04/SYNTH_display_tv_monitor_0019.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_01/SYNTH_large_appliance_0000.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_01/SYNTH_large_appliance_0004.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_01/SYNTH_large_appliance_0008.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_01/SYNTH_large_appliance_0012.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_01/SYNTH_large_appliance_0016.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_04/SYNTH_large_appliance_0003.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_04/SYNTH_large_appliance_0007.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_04/SYNTH_large_appliance_0011.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_04/SYNTH_large_appliance_0015.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_04/SYNTH_large_appliance_0019.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_01/SYNTH_lighting_0000.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_01/SYNTH_lighting_0004.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_01/SYNTH_lighting_0008.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_01/SYNTH_lighting_0012.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_01/SYNTH_lighting_0016.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_04/SYNTH_lighting_0003.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_04/SYNTH_lighting_0007.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_04/SYNTH_lighting_0011.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_04/SYNTH_lighting_0015.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_04/SYNTH_lighting_0019.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_01/SYNTH_not_ewaste_0000.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_01/SYNTH_not_ewaste_0004.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_01/SYNTH_not_ewaste_0008.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_01/SYNTH_not_ewaste_0012.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_01/SYNTH_not_ewaste_0016.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_04/SYNTH_not_ewaste_0003.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_04/SYNTH_not_ewaste_0007.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_04/SYNTH_not_ewaste_0011.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_04/SYNTH_not_ewaste_0015.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_04/SYNTH_not_ewaste_0019.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_01/SYNTH_peripheral_input_0000.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_01/SYNTH_peripheral_input_0004.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_01/SYNTH_peripheral_input_0008.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_01/SYNTH_peripheral_input_0012.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_01/SYNTH_peripheral_input_0016.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_04/SYNTH_peripheral_input_0003.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_04/SYNTH_peripheral_input_0007.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_04/SYNTH_peripheral_input_0011.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_04/SYNTH_peripheral_input_0015.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_04/SYNTH_peripheral_input_0019.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_01/SYNTH_phone_tablet_0000.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_01/SYNTH_phone_tablet_0004.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_01/SYNTH_phone_tablet_0008.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_01/SYNTH_phone_tablet_0012.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_01/SYNTH_phone_tablet_0016.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_04/SYNTH_phone_tablet_0003.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_04/SYNTH_phone_tablet_0007.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_04/SYNTH_phone_tablet_0011.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_04/SYNTH_phone_tablet_0015.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_04/SYNTH_phone_tablet_0019.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_01/SYNTH_small_appliance_0000.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_01/SYNTH_small_appliance_0004.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_01/SYNTH_small_appliance_0008.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_01/SYNTH_small_appliance_0012.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_01/SYNTH_small_appliance_0016.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_04/SYNTH_small_appliance_0003.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_04/SYNTH_small_appliance_0007.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_04/SYNTH_small_appliance_0011.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_04/SYNTH_small_appliance_0015.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_04/SYNTH_small_appliance_0019.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_01/SYNTH_small_battery_cells_0000.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_01/SYNTH_small_battery_cells_0004.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_01/SYNTH_small_battery_cells_0008.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_01/SYNTH_small_battery_cells_0012.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_01/SYNTH_small_battery_cells_0016.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_01"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_04/SYNTH_small_battery_cells_0003.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_04/SYNTH_small_battery_cells_0007.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_04/SYNTH_small_battery_cells_0011.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_04/SYNTH_small_battery_cells_0015.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_04"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_04/SYNTH_small_battery_cells_0019.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_04"
+    }
+  ],
+  "val": [
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_02/SYNTH_audio_equipment_0001.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_02/SYNTH_audio_equipment_0005.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_02/SYNTH_audio_equipment_0009.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_02/SYNTH_audio_equipment_0013.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_02/SYNTH_audio_equipment_0017.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_02/SYNTH_battery_pack_powerbank_0001.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_02/SYNTH_battery_pack_powerbank_0005.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_02/SYNTH_battery_pack_powerbank_0009.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_02/SYNTH_battery_pack_powerbank_0013.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_02/SYNTH_battery_pack_powerbank_0017.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_02/SYNTH_cable_wire_0001.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_02/SYNTH_cable_wire_0005.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_02/SYNTH_cable_wire_0009.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_02/SYNTH_cable_wire_0013.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_02/SYNTH_cable_wire_0017.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_02/SYNTH_charger_adapter_0001.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_02/SYNTH_charger_adapter_0005.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_02/SYNTH_charger_adapter_0009.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_02/SYNTH_charger_adapter_0013.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_02/SYNTH_charger_adapter_0017.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_02/SYNTH_circuit_board_loose_0001.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_02/SYNTH_circuit_board_loose_0005.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_02/SYNTH_circuit_board_loose_0009.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_02/SYNTH_circuit_board_loose_0013.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_02/SYNTH_circuit_board_loose_0017.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_02/SYNTH_computer_equipment_0001.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_02/SYNTH_computer_equipment_0005.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_02/SYNTH_computer_equipment_0009.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_02/SYNTH_computer_equipment_0013.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_02/SYNTH_computer_equipment_0017.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_02/SYNTH_display_tv_monitor_0001.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_02/SYNTH_display_tv_monitor_0005.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_02/SYNTH_display_tv_monitor_0009.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_02/SYNTH_display_tv_monitor_0013.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_02/SYNTH_display_tv_monitor_0017.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_02/SYNTH_large_appliance_0001.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_02/SYNTH_large_appliance_0005.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_02/SYNTH_large_appliance_0009.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_02/SYNTH_large_appliance_0013.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_02/SYNTH_large_appliance_0017.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_02/SYNTH_lighting_0001.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_02/SYNTH_lighting_0005.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_02/SYNTH_lighting_0009.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_02/SYNTH_lighting_0013.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_02/SYNTH_lighting_0017.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_02/SYNTH_not_ewaste_0001.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_02/SYNTH_not_ewaste_0005.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_02/SYNTH_not_ewaste_0009.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_02/SYNTH_not_ewaste_0013.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_02/SYNTH_not_ewaste_0017.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_02/SYNTH_peripheral_input_0001.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_02/SYNTH_peripheral_input_0005.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_02/SYNTH_peripheral_input_0009.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_02/SYNTH_peripheral_input_0013.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_02/SYNTH_peripheral_input_0017.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_02/SYNTH_phone_tablet_0001.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_02/SYNTH_phone_tablet_0005.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_02/SYNTH_phone_tablet_0009.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_02/SYNTH_phone_tablet_0013.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_02/SYNTH_phone_tablet_0017.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_02/SYNTH_small_appliance_0001.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_02/SYNTH_small_appliance_0005.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_02/SYNTH_small_appliance_0009.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_02/SYNTH_small_appliance_0013.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_02/SYNTH_small_appliance_0017.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_02/SYNTH_small_battery_cells_0001.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_02/SYNTH_small_battery_cells_0005.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_02/SYNTH_small_battery_cells_0009.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_02/SYNTH_small_battery_cells_0013.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_02"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_02/SYNTH_small_battery_cells_0017.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_02"
+    }
+  ],
+  "locked_test": [
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_03/SYNTH_audio_equipment_0002.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_03/SYNTH_audio_equipment_0006.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_03/SYNTH_audio_equipment_0010.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_03/SYNTH_audio_equipment_0014.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "audio_equipment/SYNTH_SESSION_03/SYNTH_audio_equipment_0018.jpg",
+      "class_name": "audio_equipment",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_03/SYNTH_battery_pack_powerbank_0002.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_03/SYNTH_battery_pack_powerbank_0006.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_03/SYNTH_battery_pack_powerbank_0010.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_03/SYNTH_battery_pack_powerbank_0014.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "battery_pack_powerbank/SYNTH_SESSION_03/SYNTH_battery_pack_powerbank_0018.jpg",
+      "class_name": "battery_pack_powerbank",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_03/SYNTH_cable_wire_0002.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_03/SYNTH_cable_wire_0006.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_03/SYNTH_cable_wire_0010.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_03/SYNTH_cable_wire_0014.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "cable_wire/SYNTH_SESSION_03/SYNTH_cable_wire_0018.jpg",
+      "class_name": "cable_wire",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_03/SYNTH_charger_adapter_0002.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_03/SYNTH_charger_adapter_0006.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_03/SYNTH_charger_adapter_0010.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_03/SYNTH_charger_adapter_0014.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "charger_adapter/SYNTH_SESSION_03/SYNTH_charger_adapter_0018.jpg",
+      "class_name": "charger_adapter",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_03/SYNTH_circuit_board_loose_0002.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_03/SYNTH_circuit_board_loose_0006.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_03/SYNTH_circuit_board_loose_0010.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_03/SYNTH_circuit_board_loose_0014.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "circuit_board_loose/SYNTH_SESSION_03/SYNTH_circuit_board_loose_0018.jpg",
+      "class_name": "circuit_board_loose",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_03/SYNTH_computer_equipment_0002.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_03/SYNTH_computer_equipment_0006.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_03/SYNTH_computer_equipment_0010.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_03/SYNTH_computer_equipment_0014.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "computer_equipment/SYNTH_SESSION_03/SYNTH_computer_equipment_0018.jpg",
+      "class_name": "computer_equipment",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_03/SYNTH_display_tv_monitor_0002.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_03/SYNTH_display_tv_monitor_0006.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_03/SYNTH_display_tv_monitor_0010.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_03/SYNTH_display_tv_monitor_0014.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "display_tv_monitor/SYNTH_SESSION_03/SYNTH_display_tv_monitor_0018.jpg",
+      "class_name": "display_tv_monitor",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_03/SYNTH_large_appliance_0002.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_03/SYNTH_large_appliance_0006.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_03/SYNTH_large_appliance_0010.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_03/SYNTH_large_appliance_0014.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "large_appliance/SYNTH_SESSION_03/SYNTH_large_appliance_0018.jpg",
+      "class_name": "large_appliance",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_03/SYNTH_lighting_0002.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_03/SYNTH_lighting_0006.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_03/SYNTH_lighting_0010.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_03/SYNTH_lighting_0014.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "lighting/SYNTH_SESSION_03/SYNTH_lighting_0018.jpg",
+      "class_name": "lighting",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_03/SYNTH_not_ewaste_0002.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_03/SYNTH_not_ewaste_0006.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_03/SYNTH_not_ewaste_0010.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_03/SYNTH_not_ewaste_0014.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "not_ewaste/SYNTH_SESSION_03/SYNTH_not_ewaste_0018.jpg",
+      "class_name": "not_ewaste",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_03/SYNTH_peripheral_input_0002.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_03/SYNTH_peripheral_input_0006.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_03/SYNTH_peripheral_input_0010.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_03/SYNTH_peripheral_input_0014.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "peripheral_input/SYNTH_SESSION_03/SYNTH_peripheral_input_0018.jpg",
+      "class_name": "peripheral_input",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_03/SYNTH_phone_tablet_0002.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_03/SYNTH_phone_tablet_0006.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_03/SYNTH_phone_tablet_0010.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_03/SYNTH_phone_tablet_0014.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "phone_tablet/SYNTH_SESSION_03/SYNTH_phone_tablet_0018.jpg",
+      "class_name": "phone_tablet",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_03/SYNTH_small_appliance_0002.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_03/SYNTH_small_appliance_0006.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_03/SYNTH_small_appliance_0010.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_03/SYNTH_small_appliance_0014.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "small_appliance/SYNTH_SESSION_03/SYNTH_small_appliance_0018.jpg",
+      "class_name": "small_appliance",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_03/SYNTH_small_battery_cells_0002.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_03/SYNTH_small_battery_cells_0006.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_03/SYNTH_small_battery_cells_0010.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_03/SYNTH_small_battery_cells_0014.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_03"
+    },
+    {
+      "rel_path": "small_battery_cells/SYNTH_SESSION_03/SYNTH_small_battery_cells_0018.jpg",
+      "class_name": "small_battery_cells",
+      "session_id": "SYNTH_SESSION_03"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+# SIEVE-T: Purpose-Built Teacher Configuration
+# Per Section 5.5 of PROJECT_SPEC.md:
+# Width x2.5, Blocks x1.5, Input 224x224, 96 Prototypes, Float32 offline only
+
+model:
+  name: "sieve_teacher"
+  family: "SIEVE"
+  role: "offline_distillation_teacher"
+  input_resolution: [224, 224, 3]
+  num_classes: 14
+  num_hazards: 4
+  num_prototypes: 96
+  width_multiplier: 2.5
+  depth_multiplier: 1.5
+  context_dim: 320
+  context_dropout: 0.3
+
+training:
+  epochs: 300
+  batch_size: 64
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  warmup_epochs: 5
+  optimizer: "AdamW"
+  precision: "float32"
+  ema_decay: 0.999
+
+distillation:
+  temperature: 3.0
+  kd_weight: 0.5
+  ce_weight: 0.5

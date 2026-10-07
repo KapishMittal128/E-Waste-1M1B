@@ -8,10 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: '#000000',
-        surface: '#09090b',
-        'surface-elevated': '#121215',
-        'surface-card': '#18181b',
+        background: '#070707',
+        void: '#070707',
+        surface: '#111113',
+        'surface-elevated': '#161619',
+        'surface-card': '#1a1a1e',
+        'safety-orange': '#FF5722',
+        'signal-orange': '#FF3B00',
         border: '#27272a',
         'border-subtle': '#1f1f23',
         'border-highlight': '#3f3f46',
@@ -23,7 +26,9 @@ export default {
       },
       fontFamily: {
         sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+        space: ['Space Grotesk', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
+        caveat: ['Caveat', 'cursive'],
       },
       animation: {
         'shimmer': 'shimmer 2.2s linear infinite',

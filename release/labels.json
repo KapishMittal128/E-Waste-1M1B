@@ -1,0 +1,41 @@
+{
+  "classes": [
+    "not_ewaste",
+    "phone_tablet",
+    "computer_equipment",
+    "display_tv_monitor",
+    "charger_adapter",
+    "cable_wire",
+    "battery_pack_powerbank",
+    "small_battery_cells",
+    "circuit_board_loose",
+    "audio_equipment",
+    "peripheral_input",
+    "small_appliance",
+    "large_appliance",
+    "lighting"
+  ],
+  "num_classes": 14,
+  "hazards": [
+    "lithium_battery_likely",
+    "mercury_lamp",
+    "crt_display",
+    "damaged_battery_visible"
+  ],
+  "num_hazards": 4,
+  "named_parts": [
+    "charging_port",
+    "circuit_board",
+    "battery_cell",
+    "screen_panel",
+    "connector_pins",
+    "wire_bundle",
+    "lamp_tube_or_base",
+    "speaker_grille_or_cone",
+    "power_plug_pins",
+    "heatsink_or_fan",
+    "weee_crossed_bin_symbol",
+    "keyboard_key_grid"
+  ],
+  "num_prototypes": 48
+}

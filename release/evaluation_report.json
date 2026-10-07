@@ -1,0 +1,188 @@
+{
+  "model_name": "EcoEdgeNet-MultiTask-Trained",
+  "author": "Kapish Mittal",
+  "architecture": "Asymmetric Macro-Micro Residual Network (AMRC + IGA)",
+  "version": "1.0.0-verified",
+  "trained_date": "2026-10-05 23:04:23",
+  "training_dataset": {
+    "name": "EWasteNet-1058 + TrashNet-2117 Curated Corpus",
+    "source": "Open-Source Research Datasets (IEEE CTSoc / GIZ / TrashNet)",
+    "total_samples": 2995,
+    "classes": [
+      "Not_EWaste",
+      "Mobile_Phones",
+      "Laptops_Computers",
+      "Keyboards_Mice",
+      "Displays_TVs",
+      "Appliances_ConsumerTech",
+      "Cameras_Optics"
+    ]
+  },
+  "complexity": {
+    "parameter_count": 84908,
+    "macs": 48193328,
+    "mflops": 96.39,
+    "file_size_mb": 0.38,
+    "file_size_kb": 386.1,
+    "peak_working_ram_mb": 8.6,
+    "mean_inference_latency_ms": 9.34
+  },
+  "empirical_metrics": {
+    "category_accuracy": 60.87,
+    "binary_gate_rejection_accuracy": 97.83,
+    "non_ewaste_rejection_precision": 95.08,
+    "non_ewaste_rejection_recall": 98.31,
+    "class_metrics": {
+      "Not_EWaste": {
+        "precision": 95.08,
+        "recall": 98.31,
+        "f1_score": 96.67,
+        "support": 59
+      },
+      "Mobile_Phones": {
+        "precision": 47.83,
+        "recall": 68.75,
+        "f1_score": 56.41,
+        "support": 32
+      },
+      "Laptops_Computers": {
+        "precision": 45.0,
+        "recall": 37.5,
+        "f1_score": 40.91,
+        "support": 24
+      },
+      "Keyboards_Mice": {
+        "precision": 25.58,
+        "recall": 57.89,
+        "f1_score": 35.48,
+        "support": 19
+      },
+      "Displays_TVs": {
+        "precision": 80.0,
+        "recall": 38.1,
+        "f1_score": 51.61,
+        "support": 21
+      },
+      "Appliances_ConsumerTech": {
+        "precision": 100.0,
+        "recall": 23.53,
+        "f1_score": 38.1,
+        "support": 17
+      },
+      "Cameras_Optics": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "support": 12
+      }
+    },
+    "confusion_matrix": [
+      [
+        58,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        22,
+        1,
+        9,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        4,
+        9,
+        8,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        0,
+        11,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        4,
+        4,
+        4,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        5,
+        6,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        6,
+        1,
+        5,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "heads": {
+    "category": {
+      "num_classes": 7,
+      "classes": [
+        "Not_EWaste",
+        "Mobile_Phones",
+        "Laptops_Computers",
+        "Keyboards_Mice",
+        "Displays_TVs",
+        "Appliances_ConsumerTech",
+        "Cameras_Optics"
+      ]
+    },
+    "hazard_severity": {
+      "num_tiers": 4,
+      "classes": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ]
+    },
+    "materials_decomposition": {
+      "num_fractions": 5,
+      "elements": [
+        "Plastics & Polymers",
+        "Copper & Conductors",
+        "Aluminum Chassis",
+        "Precious Metals",
+        "Toxic/Hazardous"
+      ],
+      "constraint": "Dirichlet Simplex (Sum = 100%)"
+    },
+    "circularity_hierarchy": {
+      "num_routes": 4,
+      "classes": [
+        "Reuse First",
+        "Repair & Extend Life",
+        "Donate / Refurbish",
+        "Authorized Recycling"
+      ]
+    }
+  }
+}

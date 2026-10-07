@@ -1,0 +1,16 @@
+{
+  "gate_object_threshold": 0.4,
+  "gate_ewaste_candidate_threshold": 0.35,
+  "p_ewaste_classification_threshold": 0.5,
+  "abstain_confidence_threshold": 0.6,
+  "hazard_thresholds": {
+    "lithium_battery_likely": 0.3,
+    "mercury_lamp": 0.35,
+    "crt_display": 0.4,
+    "damaged_battery_visible": 0.25
+  },
+  "temporal_smoothing": {
+    "window_size": 5,
+    "min_consistent_frames": 3
+  }
+}

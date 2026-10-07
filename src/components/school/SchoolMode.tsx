@@ -12,12 +12,19 @@ import {
   Copy, 
   Check, 
   X,
-  Calendar
+  Calendar,
+  Lock,
+  ShieldCheck,
+  Package
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { Card } from '../ui/Card';
 import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
+import { HandwrittenNote } from '../annotations/HandwrittenNote';
+import { Magnet } from '../reactbits/Magnet';
+import { ClickSpark } from '../reactbits/ClickSpark';
+import { SpotlightCard } from '../reactbits/SpotlightCard';
 
 export const SchoolMode: React.FC = () => {
   const [requests, setRequests] = useState<BinPlacementRequest[]>([]);
@@ -82,30 +89,78 @@ export const SchoolMode: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       
       {/* Header */}
-      <Card className="p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div className="space-y-2">
-          <Badge variant="outline" className="text-zinc-300 border-zinc-800 bg-zinc-950">
-            <GraduationCap className="w-3.5 h-3.5 text-zinc-300" />
-            <span>Institutional E-Waste Bin Program • Gwalior</span>
-          </Badge>
-          <h2 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
-            School & Campus Collection Bins
+      <SpotlightCard className="p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 bg-zinc-950/80 border border-white/10 border-t-white/20 backdrop-blur-3xl shadow-2xl rounded-3xl">
+        <div className="space-y-2.5">
+          <div className="inline-flex items-center gap-2">
+            <Badge variant="cyan" className="flex items-center gap-1.5">
+              <GraduationCap className="w-3.5 h-3.5 text-cyan-400" />
+              <span>INSTITUTIONAL BIN PROGRAM • GWALIOR</span>
+            </Badge>
+            <Badge variant="success">
+              <span>ZERO COST DEPLOYMENT</span>
+            </Badge>
+          </div>
+          <h2 className="text-2xl sm:text-4xl font-extrabold font-space text-white tracking-tight uppercase">
+            CAMPUS COLLECTION RECEPTACLES
           </h2>
-          <p className="text-xs sm:text-sm text-zinc-400 max-w-2xl">
+          <p className="text-xs sm:text-sm text-zinc-400 max-w-2xl leading-relaxed">
             Educational institutes in Gwalior can request dedicated 50kg safe e-waste collection bins connected directly to MPPCB-authorized recyclers for periodic bulk clearances.
           </p>
+          <div className="pt-1">
+            <HandwrittenNote
+              arrow="left"
+              text="zero-cost 50kg steel receptacle with dual security lock for your school"
+              color="amber"
+              tilt={-2}
+            />
+          </div>
         </div>
 
-        <Button
-          variant="primary"
-          size="md"
-          onClick={() => setShowBinRequestModal(true)}
-          className="self-start md:self-auto text-xs sm:text-sm"
-        >
-          <PlusCircle className="w-4 h-4 mr-1.5" />
-          Request an E-Waste Bin for Your Campus
-        </Button>
-      </Card>
+        <ClickSpark sparkColor="#10B981" sparkRadius={25}>
+          <Magnet padding={60} magnetStrength={2.5}>
+            <button
+              onClick={() => setShowBinRequestModal(true)}
+              className="px-6 py-3.5 rounded-full bg-white text-black font-mono font-bold text-xs uppercase tracking-wider hover:bg-zinc-100 transition-all shadow-[0_0_25px_rgba(255,255,255,0.15)] flex items-center gap-2 select-none"
+            >
+              <PlusCircle className="w-4 h-4" />
+              <span>REQUEST CAMPUS BIN</span>
+            </button>
+          </Magnet>
+        </ClickSpark>
+      </SpotlightCard>
+
+      {/* Technical Schematic of Institutional Bin */}
+      <div className="p-6 rounded-3xl bg-zinc-900/60 border border-white/10 backdrop-blur-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="flex items-center gap-4">
+          <div className="w-14 h-14 rounded-2xl bg-zinc-950 border border-emerald-500/40 text-emerald-400 flex items-center justify-center flex-shrink-0 shadow-lg">
+            <Package className="w-7 h-7" />
+          </div>
+          <div className="space-y-1">
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-mono font-bold text-white uppercase">
+                SPEC: 50KG TAMPER-PROOF STEEL RECEPTACLE
+              </span>
+              <Badge variant="outline" className="text-[10px]">
+                CPCB FORM-6
+              </Badge>
+            </div>
+            <p className="text-xs text-zinc-400 font-sans">
+              1.2mm Cold-rolled steel • Dual brass cylinder lock • Flame-retardant internal liner • Barcoded tracking seal.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-3 font-mono text-xs text-zinc-300">
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-950/80 border border-white/10">
+            <Lock className="w-3.5 h-3.5 text-amber-400" />
+            <span>DUAL KEY LOCK</span>
+          </div>
+          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-zinc-950/80 border border-white/10">
+            <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+            <span>INSURED DISPATCH</span>
+          </div>
+        </div>
+      </div>
 
       {/* Program Information Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">

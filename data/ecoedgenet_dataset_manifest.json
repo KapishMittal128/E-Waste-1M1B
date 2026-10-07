@@ -1,0 +1,1412 @@
+{
+  "dataset_name": "EcoEdgeNet-MultiTask-EWaste-Corpus",
+  "source": "Kaggle + Indian Gwalior Regional E-Waste Augmentation",
+  "total_samples": 100,
+  "split_ratio": {
+    "train": 0.8,
+    "val": 0.1,
+    "calibration": 0.1
+  },
+  "samples": [
+    {
+      "id": "synthetic-0001",
+      "file_path": "data/synthetic/laptops_&_computers_1.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0002",
+      "file_path": "data/synthetic/batteries_&_power_2.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0003",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_3.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0004",
+      "file_path": "data/synthetic/cables_&_chargers_4.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0005",
+      "file_path": "data/synthetic/pcbs_&_internal_components_5.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0006",
+      "file_path": "data/synthetic/other_electronics_6.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0007",
+      "file_path": "data/synthetic/mobile_phones_7.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0008",
+      "file_path": "data/synthetic/laptops_&_computers_8.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0009",
+      "file_path": "data/synthetic/batteries_&_power_9.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0010",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_10.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0011",
+      "file_path": "data/synthetic/cables_&_chargers_11.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0012",
+      "file_path": "data/synthetic/pcbs_&_internal_components_12.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0013",
+      "file_path": "data/synthetic/other_electronics_13.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0014",
+      "file_path": "data/synthetic/mobile_phones_14.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0015",
+      "file_path": "data/synthetic/laptops_&_computers_15.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0016",
+      "file_path": "data/synthetic/batteries_&_power_16.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0017",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_17.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0018",
+      "file_path": "data/synthetic/cables_&_chargers_18.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0019",
+      "file_path": "data/synthetic/pcbs_&_internal_components_19.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0020",
+      "file_path": "data/synthetic/other_electronics_20.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0021",
+      "file_path": "data/synthetic/mobile_phones_21.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0022",
+      "file_path": "data/synthetic/laptops_&_computers_22.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0023",
+      "file_path": "data/synthetic/batteries_&_power_23.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0024",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_24.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0025",
+      "file_path": "data/synthetic/cables_&_chargers_25.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0026",
+      "file_path": "data/synthetic/pcbs_&_internal_components_26.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0027",
+      "file_path": "data/synthetic/other_electronics_27.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0028",
+      "file_path": "data/synthetic/mobile_phones_28.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0029",
+      "file_path": "data/synthetic/laptops_&_computers_29.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0030",
+      "file_path": "data/synthetic/batteries_&_power_30.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0031",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_31.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0032",
+      "file_path": "data/synthetic/cables_&_chargers_32.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0033",
+      "file_path": "data/synthetic/pcbs_&_internal_components_33.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0034",
+      "file_path": "data/synthetic/other_electronics_34.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0035",
+      "file_path": "data/synthetic/mobile_phones_35.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0036",
+      "file_path": "data/synthetic/laptops_&_computers_36.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0037",
+      "file_path": "data/synthetic/batteries_&_power_37.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0038",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_38.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0039",
+      "file_path": "data/synthetic/cables_&_chargers_39.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0040",
+      "file_path": "data/synthetic/pcbs_&_internal_components_40.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0041",
+      "file_path": "data/synthetic/other_electronics_41.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0042",
+      "file_path": "data/synthetic/mobile_phones_42.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0043",
+      "file_path": "data/synthetic/laptops_&_computers_43.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0044",
+      "file_path": "data/synthetic/batteries_&_power_44.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0045",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_45.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0046",
+      "file_path": "data/synthetic/cables_&_chargers_46.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0047",
+      "file_path": "data/synthetic/pcbs_&_internal_components_47.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0048",
+      "file_path": "data/synthetic/other_electronics_48.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0049",
+      "file_path": "data/synthetic/mobile_phones_49.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0050",
+      "file_path": "data/synthetic/laptops_&_computers_50.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0051",
+      "file_path": "data/synthetic/batteries_&_power_51.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0052",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_52.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0053",
+      "file_path": "data/synthetic/cables_&_chargers_53.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0054",
+      "file_path": "data/synthetic/pcbs_&_internal_components_54.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0055",
+      "file_path": "data/synthetic/other_electronics_55.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0056",
+      "file_path": "data/synthetic/mobile_phones_56.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0057",
+      "file_path": "data/synthetic/laptops_&_computers_57.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0058",
+      "file_path": "data/synthetic/batteries_&_power_58.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0059",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_59.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0060",
+      "file_path": "data/synthetic/cables_&_chargers_60.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0061",
+      "file_path": "data/synthetic/pcbs_&_internal_components_61.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0062",
+      "file_path": "data/synthetic/other_electronics_62.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0063",
+      "file_path": "data/synthetic/mobile_phones_63.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0064",
+      "file_path": "data/synthetic/laptops_&_computers_64.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0065",
+      "file_path": "data/synthetic/batteries_&_power_65.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0066",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_66.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0067",
+      "file_path": "data/synthetic/cables_&_chargers_67.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0068",
+      "file_path": "data/synthetic/pcbs_&_internal_components_68.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0069",
+      "file_path": "data/synthetic/other_electronics_69.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0070",
+      "file_path": "data/synthetic/mobile_phones_70.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0071",
+      "file_path": "data/synthetic/laptops_&_computers_71.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0072",
+      "file_path": "data/synthetic/batteries_&_power_72.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0073",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_73.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0074",
+      "file_path": "data/synthetic/cables_&_chargers_74.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0075",
+      "file_path": "data/synthetic/pcbs_&_internal_components_75.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0076",
+      "file_path": "data/synthetic/other_electronics_76.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0077",
+      "file_path": "data/synthetic/mobile_phones_77.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0078",
+      "file_path": "data/synthetic/laptops_&_computers_78.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0079",
+      "file_path": "data/synthetic/batteries_&_power_79.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0080",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_80.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0081",
+      "file_path": "data/synthetic/cables_&_chargers_81.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0082",
+      "file_path": "data/synthetic/pcbs_&_internal_components_82.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0083",
+      "file_path": "data/synthetic/other_electronics_83.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0084",
+      "file_path": "data/synthetic/mobile_phones_84.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0085",
+      "file_path": "data/synthetic/laptops_&_computers_85.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0086",
+      "file_path": "data/synthetic/batteries_&_power_86.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0087",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_87.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0088",
+      "file_path": "data/synthetic/cables_&_chargers_88.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0089",
+      "file_path": "data/synthetic/pcbs_&_internal_components_89.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0090",
+      "file_path": "data/synthetic/other_electronics_90.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0091",
+      "file_path": "data/synthetic/mobile_phones_91.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0092",
+      "file_path": "data/synthetic/laptops_&_computers_92.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0093",
+      "file_path": "data/synthetic/batteries_&_power_93.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    },
+    {
+      "id": "synthetic-0094",
+      "file_path": "data/synthetic/appliances_&_consumer_tech_94.png",
+      "category": "Appliances & Consumer Tech",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.35,
+        0.2,
+        0.35,
+        0.02,
+        0.08
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0095",
+      "file_path": "data/synthetic/cables_&_chargers_95.png",
+      "category": "Cables & Chargers",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.35,
+        0.55,
+        0.05,
+        0.01,
+        0.04
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0096",
+      "file_path": "data/synthetic/pcbs_&_internal_components_96.png",
+      "category": "PCBs & Internal Components",
+      "hazard_tier": 2,
+      "material_fractions": [
+        0.3,
+        0.35,
+        0.1,
+        0.1,
+        0.15
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0097",
+      "file_path": "data/synthetic/other_electronics_97.png",
+      "category": "Other Electronics",
+      "hazard_tier": 0,
+      "material_fractions": [
+        0.45,
+        0.3,
+        0.15,
+        0.03,
+        0.07
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0098",
+      "file_path": "data/synthetic/mobile_phones_98.png",
+      "category": "Mobile Phones",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.38,
+        0.24,
+        0.2,
+        0.06,
+        0.12
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0099",
+      "file_path": "data/synthetic/laptops_&_computers_99.png",
+      "category": "Laptops & Computers",
+      "hazard_tier": 1,
+      "material_fractions": [
+        0.28,
+        0.22,
+        0.35,
+        0.05,
+        0.1
+      ],
+      "circularity_route": 0
+    },
+    {
+      "id": "synthetic-0100",
+      "file_path": "data/synthetic/batteries_&_power_100.png",
+      "category": "Batteries & Power",
+      "hazard_tier": 3,
+      "material_fractions": [
+        0.05,
+        0.15,
+        0.1,
+        0.3,
+        0.4
+      ],
+      "circularity_route": 3
+    }
+  ]
+}

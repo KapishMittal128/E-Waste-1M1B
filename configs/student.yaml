@@ -1,0 +1,47 @@
+# SIEVE-S Student Model Architecture & Training Configuration
+
+model:
+  name: "SIEVE-S"
+  input_resolution: 192
+  in_channels: 3
+  stem_learned_channels: 16
+  stem_edge_channels: 8
+  stem_out_channels: 24
+  
+  stages:
+    s1_channels: 32
+    s1_expansion: 3
+    s2_channels: 64
+    s2_expansion: 4
+    s3_channels: 96
+    s3_expansion: 4
+
+  heads:
+    gate_dim: 3
+    num_prototypes: 48
+    named_parts: 12
+    free_parts: 36
+    context_dim: 128
+    context_dropout_rate: 0.3
+    num_classes: 14
+    num_hazards: 4
+
+training:
+  batch_size: 128
+  epochs_float: 200
+  epochs_qat: 30
+  optimizer: "AdamW"
+  peak_learning_rate: 0.002
+  min_learning_rate: 0.00001
+  weight_decay: 0.0001
+  warmup_epochs: 5
+  ema_decay: 0.999
+  mixed_precision: true
+
+quantization:
+  scheme: "LiteRT-INT8"
+  method: "QAT"
+  per_channel_weights: true
+  symmetric_weights: true
+  input_dtype: "uint8"
+  output_dtype: "int8"

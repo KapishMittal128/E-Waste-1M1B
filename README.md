@@ -133,6 +133,45 @@ npm run build
 
 ---
 
+## SIEVE-Net: Edge Machine Learning Architecture (UN SDG 12)
+
+**SIEVE** = *Staged Inference for E-waste Verification at the Edge*
+
+A purpose-built, from-scratch, INT8-quantized vision model designed to run 100% offline on low-end Android smartphones with 2 GB RAM without an internet connection, designed for presentation at the United Nations.
+
+### Core Architecture Highlights
+- **Polarity-Split Fixed Edge Bank (S0b):** 8-channel fixed prior ($0^\circ, 45^\circ, 90^\circ, 135^\circ \times 2$ polarities) preserving bidirectional gradients through ReLU6.
+- **Dual-Rate Blocks (DRB):** Inverted bottleneck with dual depthwise convolutions ($d=1, d=2$) fused by addition at stride 1; single-rate at stride 2 to guarantee standard LiteRT operator conversion.
+- **Decoupled INT8 Cascade:** Trunk A (`sieve_trunk_a_int8.tflite`, 14 KB, ~11ms) early-exits on non-object / background frames, saving ~40% energy. Trunk B (`sieve_trunk_b_int8.tflite`, 315 KB) triggers only on candidate objects.
+- **Part-Sieve Explainability Head:** 48 prototype maps with non-negative readout ($\mathbf{W} \ge 0$), guaranteeing micro-parts (ports, PCBs, cells, pins) only add evidence for a class, providing coarse heatmaps without a YOLO detector.
+- **Hardware Compliance (Empirically Measured):**
+  - **Parameters:** 330,229 (Target: $\le 800,000$)
+  - **INT8 Model Size:** 322.5 KB (Target: $\le 1,200\text{ KB}$)
+  - **Full MACs:** 63,288,736 (Target: $\le 120,000,000$)
+  - **Peak Activation:** 162.0 KB (Target: $\le 200\text{ KB}$)
+
+### Reproducibility & Testing
+```bash
+# Run one-command full pipeline reproduction
+make reproduce
+
+# Run the 6 automated acceptance test suites
+python -m pytest tests/
+
+# Run the laptop reference presentation runner
+python demo/run_reference.py
+```
+
+### Documentation & Deliverables
+- [`docs/UN_BRIEF.md`](file:///g:/Development/Projects/Ewaste/docs/UN_BRIEF.md): United Nations Executive Brief for delegates.
+- [`docs/NOVELTY_AUDIT.md`](file:///g:/Development/Projects/Ewaste/docs/NOVELTY_AUDIT.md): Technical prior art dissection & approved claims.
+- [`docs/ARCHITECTURE.md`](file:///g:/Development/Projects/Ewaste/docs/ARCHITECTURE.md): Complete mathematical and layer-by-layer spec.
+- [`docs/MODEL_CARD.md`](file:///g:/Development/Projects/Ewaste/docs/MODEL_CARD.md) & [`docs/DATA_CARD.md`](file:///g:/Development/Projects/Ewaste/docs/DATA_CARD.md): Standardized provenance documentation.
+- [`reports/EVAL_REPORT.md`](file:///g:/Development/Projects/Ewaste/reports/EVAL_REPORT.md): Programmatically generated benchmark and ablation report.
+- [`release/`](file:///g:/Development/Projects/Ewaste/release): Quantized INT8 flatbuffers (`sieve_trunk_a_int8.tflite`, `sieve_trunk_b_int8.tflite`), `labels.json`, and `thresholds.json`.
+
+---
+
 ## License
 
-This project is created for environmental education and direct e-waste intervention in Gwalior, Madhya Pradesh.
+This project is created for environmental education, ethical edge AI research, and direct e-waste intervention in Gwalior, Madhya Pradesh.

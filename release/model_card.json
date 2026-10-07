@@ -1,0 +1,17 @@
+{
+  "model_name": "SIEVE-Net",
+  "version": "1.0.0-rc",
+  "target_runtime": "LiteRT INT8 CPU",
+  "intended_hardware": "Android 2GB RAM",
+  "quantization": "full_integer_int8",
+  "student_parameters": 330229,
+  "int8_model_size_kb": 322.5,
+  "macs": 63288736,
+  "largest_activation_kb": 162.0,
+  "un_sdg_targets": [
+    "SDG 12: Responsible Consumption and Production",
+    "SDG 3: Good Health and Well-being"
+  ],
+  "offline_only": true,
+  "internet_permission_required": false
+}

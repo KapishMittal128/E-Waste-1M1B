@@ -76,8 +76,10 @@ export const PreCallModal: React.FC<PreCallModalProps> = ({
         {/* Recycler Target Meta */}
         <div className="p-3 rounded-xl bg-zinc-950 border border-zinc-800 text-xs">
           <div className="font-bold text-white text-sm">{recycler.name}</div>
-          <div className="text-zinc-400 mt-0.5">{recycler.locality}, Gwalior • {recycler.openingHours}</div>
-          <div className="font-mono text-zinc-200 mt-1 font-bold">📞 {recycler.phone}</div>
+          <div className="font-mono text-zinc-200 mt-1 font-bold flex items-center gap-1.5">
+            <Phone className="w-3.5 h-3.5 text-zinc-400" />
+            <span>{recycler.phone}</span>
+          </div>
         </div>
 
         {/* Script Checklist */}

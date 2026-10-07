@@ -1,0 +1,13 @@
+# SIEVE-Net Asymmetric Cost Matrix
+# Missing a hazardous e-waste item is significantly worse than a false alarm.
+
+cost_matrix:
+  false_negative_ewaste_weight: 3.0
+  false_positive_ewaste_weight: 1.0
+  false_negative_hazard_weight: 5.0
+  false_positive_hazard_weight: 1.0
+
+thresholds:
+  default_gate_confidence: 0.65
+  default_abstain_threshold: 0.55
+  hazard_alert_threshold: 0.35  # Low threshold to prevent critical false negatives
