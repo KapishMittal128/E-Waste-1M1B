@@ -98,9 +98,12 @@ export const ScannerHero: React.FC<ScannerHeroProps> = ({
         </button>
 
         {/* Center: Clean Brand Mark (Exact CREATIE Aesthetic from Image 1) */}
-        <div className="text-center">
-          <span className="font-space font-black tracking-[0.35em] text-white text-sm sm:text-base uppercase drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">
+        <div className="text-center select-none">
+          <span className="font-space font-black tracking-[0.35em] text-white text-sm sm:text-base uppercase drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] block">
             EWASTE OFF
+          </span>
+          <span className="font-caveat text-sm sm:text-base text-zinc-100 tracking-wide block -mt-0.5 drop-shadow-md">
+            made with love by Kapish Mittal
           </span>
         </div>
 
@@ -305,8 +308,8 @@ export const ScannerHero: React.FC<ScannerHeroProps> = ({
         ===================================================================
       */}
       <footer className="relative z-20 w-full max-w-7xl mx-auto pb-4 px-4 sm:px-8 flex items-center justify-between text-xs text-zinc-300 select-none">
-        <p className="font-mono text-[11px] text-zinc-300">
-          — Not just code. Keeping heavy metals out of the soil.
+        <p className="font-mono text-[11px] text-zinc-200">
+          — Not just code. Keeping heavy metals out of the soil. &bull; Made with love by Kapish Mittal
         </p>
         <span className="font-mono text-[11px] text-zinc-400 hidden sm:inline">
           Latency: <strong>9.3ms</strong> // Local-First Edge AI
