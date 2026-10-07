@@ -107,9 +107,14 @@ export const App: React.FC = () => {
       const result = await AIVisionService.analyzeImage(undefined, query);
       setAnalysisResult(result);
       setScanState('result');
-    } catch (err) {
-      console.error(err);
-      setScanState('idle');
+    } catch (err: any) {
+      if (err instanceof NotEWasteError) {
+        setNotEWasteDescription(err.description);
+        setScanState('not_ewaste');
+      } else {
+        console.error(err);
+        setScanState('idle');
+      }
     }
   };
 

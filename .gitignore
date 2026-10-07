@@ -31,6 +31,7 @@ dist-ssr
 # Temporary / ide files
 .gemini
 .system_generated
+.playwright-mcp/
 
 # Python Virtual Environment & Bytecode
 .venv/

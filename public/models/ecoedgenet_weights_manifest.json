@@ -1,0 +1,557 @@
+{
+  "stem_w": {
+    "shape": [
+      3,
+      3,
+      3,
+      24
+    ],
+    "offset": 0,
+    "length": 648,
+    "byteLength": 2592
+  },
+  "stem_b": {
+    "shape": [
+      24
+    ],
+    "offset": 2592,
+    "length": 24,
+    "byteLength": 96
+  },
+  "stage1_alpha_proj_w": {
+    "shape": [
+      1,
+      1,
+      12,
+      16
+    ],
+    "offset": 2688,
+    "length": 192,
+    "byteLength": 768
+  },
+  "stage1_alpha_proj_b": {
+    "shape": [
+      16
+    ],
+    "offset": 3456,
+    "length": 16,
+    "byteLength": 64
+  },
+  "stage1_alpha_dconv_w": {
+    "shape": [
+      3,
+      3,
+      16,
+      1
+    ],
+    "offset": 3520,
+    "length": 144,
+    "byteLength": 576
+  },
+  "stage1_alpha_dconv_b": {
+    "shape": [
+      16
+    ],
+    "offset": 4096,
+    "length": 16,
+    "byteLength": 64
+  },
+  "stage1_beta_conv_w": {
+    "shape": [
+      1,
+      1,
+      12,
+      16
+    ],
+    "offset": 4160,
+    "length": 192,
+    "byteLength": 768
+  },
+  "stage1_beta_conv_b": {
+    "shape": [
+      16
+    ],
+    "offset": 4928,
+    "length": 16,
+    "byteLength": 64
+  },
+  "stage1_fusion_conv_w": {
+    "shape": [
+      1,
+      1,
+      32,
+      32
+    ],
+    "offset": 4992,
+    "length": 1024,
+    "byteLength": 4096
+  },
+  "stage1_fusion_conv_b": {
+    "shape": [
+      32
+    ],
+    "offset": 9088,
+    "length": 32,
+    "byteLength": 128
+  },
+  "stage1_iga_fc1_w": {
+    "shape": [
+      1,
+      1,
+      32,
+      8
+    ],
+    "offset": 9216,
+    "length": 256,
+    "byteLength": 1024
+  },
+  "stage1_iga_fc2_w": {
+    "shape": [
+      1,
+      1,
+      8,
+      32
+    ],
+    "offset": 10240,
+    "length": 256,
+    "byteLength": 1024
+  },
+  "stage1_shortcut_w": {
+    "shape": [
+      1,
+      1,
+      24,
+      32
+    ],
+    "offset": 11264,
+    "length": 768,
+    "byteLength": 3072
+  },
+  "stage1_shortcut_b": {
+    "shape": [
+      32
+    ],
+    "offset": 14336,
+    "length": 32,
+    "byteLength": 128
+  },
+  "stage2_alpha_proj_w": {
+    "shape": [
+      1,
+      1,
+      16,
+      32
+    ],
+    "offset": 14464,
+    "length": 512,
+    "byteLength": 2048
+  },
+  "stage2_alpha_proj_b": {
+    "shape": [
+      32
+    ],
+    "offset": 16512,
+    "length": 32,
+    "byteLength": 128
+  },
+  "stage2_alpha_dconv_w": {
+    "shape": [
+      3,
+      3,
+      32,
+      1
+    ],
+    "offset": 16640,
+    "length": 288,
+    "byteLength": 1152
+  },
+  "stage2_alpha_dconv_b": {
+    "shape": [
+      32
+    ],
+    "offset": 17792,
+    "length": 32,
+    "byteLength": 128
+  },
+  "stage2_beta_conv_w": {
+    "shape": [
+      1,
+      1,
+      16,
+      32
+    ],
+    "offset": 17920,
+    "length": 512,
+    "byteLength": 2048
+  },
+  "stage2_beta_conv_b": {
+    "shape": [
+      32
+    ],
+    "offset": 19968,
+    "length": 32,
+    "byteLength": 128
+  },
+  "stage2_fusion_conv_w": {
+    "shape": [
+      1,
+      1,
+      64,
+      64
+    ],
+    "offset": 20096,
+    "length": 4096,
+    "byteLength": 16384
+  },
+  "stage2_fusion_conv_b": {
+    "shape": [
+      64
+    ],
+    "offset": 36480,
+    "length": 64,
+    "byteLength": 256
+  },
+  "stage2_iga_fc1_w": {
+    "shape": [
+      1,
+      1,
+      64,
+      16
+    ],
+    "offset": 36736,
+    "length": 1024,
+    "byteLength": 4096
+  },
+  "stage2_iga_fc2_w": {
+    "shape": [
+      1,
+      1,
+      16,
+      64
+    ],
+    "offset": 40832,
+    "length": 1024,
+    "byteLength": 4096
+  },
+  "stage2_shortcut_w": {
+    "shape": [
+      1,
+      1,
+      32,
+      64
+    ],
+    "offset": 44928,
+    "length": 2048,
+    "byteLength": 8192
+  },
+  "stage2_shortcut_b": {
+    "shape": [
+      64
+    ],
+    "offset": 53120,
+    "length": 64,
+    "byteLength": 256
+  },
+  "stage3_alpha_proj_w": {
+    "shape": [
+      1,
+      1,
+      32,
+      48
+    ],
+    "offset": 53376,
+    "length": 1536,
+    "byteLength": 6144
+  },
+  "stage3_alpha_proj_b": {
+    "shape": [
+      48
+    ],
+    "offset": 59520,
+    "length": 48,
+    "byteLength": 192
+  },
+  "stage3_alpha_dconv_w": {
+    "shape": [
+      3,
+      3,
+      48,
+      1
+    ],
+    "offset": 59712,
+    "length": 432,
+    "byteLength": 1728
+  },
+  "stage3_alpha_dconv_b": {
+    "shape": [
+      48
+    ],
+    "offset": 61440,
+    "length": 48,
+    "byteLength": 192
+  },
+  "stage3_beta_conv_w": {
+    "shape": [
+      1,
+      1,
+      32,
+      48
+    ],
+    "offset": 61632,
+    "length": 1536,
+    "byteLength": 6144
+  },
+  "stage3_beta_conv_b": {
+    "shape": [
+      48
+    ],
+    "offset": 67776,
+    "length": 48,
+    "byteLength": 192
+  },
+  "stage3_fusion_conv_w": {
+    "shape": [
+      1,
+      1,
+      96,
+      96
+    ],
+    "offset": 67968,
+    "length": 9216,
+    "byteLength": 36864
+  },
+  "stage3_fusion_conv_b": {
+    "shape": [
+      96
+    ],
+    "offset": 104832,
+    "length": 96,
+    "byteLength": 384
+  },
+  "stage3_iga_fc1_w": {
+    "shape": [
+      1,
+      1,
+      96,
+      24
+    ],
+    "offset": 105216,
+    "length": 2304,
+    "byteLength": 9216
+  },
+  "stage3_iga_fc2_w": {
+    "shape": [
+      1,
+      1,
+      24,
+      96
+    ],
+    "offset": 114432,
+    "length": 2304,
+    "byteLength": 9216
+  },
+  "stage3_shortcut_w": {
+    "shape": [
+      1,
+      1,
+      64,
+      96
+    ],
+    "offset": 123648,
+    "length": 6144,
+    "byteLength": 24576
+  },
+  "stage3_shortcut_b": {
+    "shape": [
+      96
+    ],
+    "offset": 148224,
+    "length": 96,
+    "byteLength": 384
+  },
+  "stage4_alpha_proj_w": {
+    "shape": [
+      1,
+      1,
+      48,
+      64
+    ],
+    "offset": 148608,
+    "length": 3072,
+    "byteLength": 12288
+  },
+  "stage4_alpha_proj_b": {
+    "shape": [
+      64
+    ],
+    "offset": 160896,
+    "length": 64,
+    "byteLength": 256
+  },
+  "stage4_alpha_dconv_w": {
+    "shape": [
+      3,
+      3,
+      64,
+      1
+    ],
+    "offset": 161152,
+    "length": 576,
+    "byteLength": 2304
+  },
+  "stage4_alpha_dconv_b": {
+    "shape": [
+      64
+    ],
+    "offset": 163456,
+    "length": 64,
+    "byteLength": 256
+  },
+  "stage4_beta_conv_w": {
+    "shape": [
+      1,
+      1,
+      48,
+      64
+    ],
+    "offset": 163712,
+    "length": 3072,
+    "byteLength": 12288
+  },
+  "stage4_beta_conv_b": {
+    "shape": [
+      64
+    ],
+    "offset": 176000,
+    "length": 64,
+    "byteLength": 256
+  },
+  "stage4_fusion_conv_w": {
+    "shape": [
+      1,
+      1,
+      128,
+      128
+    ],
+    "offset": 176256,
+    "length": 16384,
+    "byteLength": 65536
+  },
+  "stage4_fusion_conv_b": {
+    "shape": [
+      128
+    ],
+    "offset": 241792,
+    "length": 128,
+    "byteLength": 512
+  },
+  "stage4_iga_fc1_w": {
+    "shape": [
+      1,
+      1,
+      128,
+      32
+    ],
+    "offset": 242304,
+    "length": 4096,
+    "byteLength": 16384
+  },
+  "stage4_iga_fc2_w": {
+    "shape": [
+      1,
+      1,
+      32,
+      128
+    ],
+    "offset": 258688,
+    "length": 4096,
+    "byteLength": 16384
+  },
+  "stage4_shortcut_w": {
+    "shape": [
+      1,
+      1,
+      96,
+      128
+    ],
+    "offset": 275072,
+    "length": 12288,
+    "byteLength": 49152
+  },
+  "stage4_shortcut_b": {
+    "shape": [
+      128
+    ],
+    "offset": 324224,
+    "length": 128,
+    "byteLength": 512
+  },
+  "head_category_w": {
+    "shape": [
+      128,
+      7
+    ],
+    "offset": 324736,
+    "length": 896,
+    "byteLength": 3584
+  },
+  "head_category_b": {
+    "shape": [
+      7
+    ],
+    "offset": 328320,
+    "length": 7,
+    "byteLength": 28
+  },
+  "head_hazard_w": {
+    "shape": [
+      128,
+      4
+    ],
+    "offset": 328348,
+    "length": 512,
+    "byteLength": 2048
+  },
+  "head_hazard_b": {
+    "shape": [
+      4
+    ],
+    "offset": 330396,
+    "length": 4,
+    "byteLength": 16
+  },
+  "head_materials_w": {
+    "shape": [
+      128,
+      5
+    ],
+    "offset": 330412,
+    "length": 640,
+    "byteLength": 2560
+  },
+  "head_materials_b": {
+    "shape": [
+      5
+    ],
+    "offset": 332972,
+    "length": 5,
+    "byteLength": 20
+  },
+  "head_route_w": {
+    "shape": [
+      128,
+      4
+    ],
+    "offset": 332992,
+    "length": 512,
+    "byteLength": 2048
+  },
+  "head_route_b": {
+    "shape": [
+      4
+    ],
+    "offset": 335040,
+    "length": 4,
+    "byteLength": 16
+  }
+}
