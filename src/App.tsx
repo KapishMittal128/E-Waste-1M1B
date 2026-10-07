@@ -176,6 +176,9 @@ export const App: React.FC = () => {
         onSearchManual={handleSearchManual}
         onSelectPreset={handleSelectPreset}
         isAnalyzing={scanState === 'analyzing'}
+        selectedLocality={selectedLocality}
+        onLocalityChange={handleLocalityChange}
+        onOpenHazardGuide={() => setIsHazardGuideOpen(true)}
       />
     );
   };
@@ -186,16 +189,18 @@ export const App: React.FC = () => {
       <Aurora speed={0.45} />
       <Particles particleCount={35} particleColor="255, 255, 255" speed={0.25} />
 
-      <Header
-        onNavigateHome={() => setActiveTab('scanner')}
-        selectedLocality={selectedLocality}
-        setSelectedLocality={handleLocalityChange}
-        onOpenHazardGuide={() => setIsHazardGuideOpen(true)}
-      />
+      {activeTab !== 'scanner' && (
+        <Header
+          onNavigateHome={() => setActiveTab('scanner')}
+          selectedLocality={selectedLocality}
+          setSelectedLocality={handleLocalityChange}
+          onOpenHazardGuide={() => setIsHazardGuideOpen(true)}
+        />
+      )}
 
-      <main className="flex-1 pb-28 md:pb-24 relative z-10">
+      <main className={`flex-1 relative z-10 ${activeTab !== 'scanner' ? 'sm:pl-16 lg:pl-20 pt-16 sm:pt-20 pb-16' : ''}`}>
         {activeTab === 'scanner' && (
-          <div className="space-y-6">
+          <div>
             {renderScannerContent()}
           </div>
         )}
@@ -217,14 +222,15 @@ export const App: React.FC = () => {
         {activeTab === 'trust' && <TrustAndVerification />}
       </main>
 
-      {/* Floating Frosted Glass Command Dock */}
+      {/* Floating Frosted Glass Command Dock on Side */}
       <FloatingDock
         activeTab={mapActiveTabToNavTab(activeTab)}
         onTabChange={handleDockTabChange}
       />
 
-      {/* Footer */}
-      <footer className="border-t border-zinc-800/80 bg-[#070707]/90 backdrop-blur-md py-8 text-xs text-zinc-400 relative z-10">
+      {/* Footer only on secondary tabs */}
+      {activeTab !== 'scanner' && (
+        <footer className="border-t border-zinc-800/80 bg-[#070707]/90 backdrop-blur-md py-8 text-xs text-zinc-400 relative z-10 sm:pl-16 lg:pl-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="space-y-1 text-center sm:text-left font-mono">
             <div className="font-bold text-white flex items-center gap-2 justify-center sm:justify-start">
@@ -250,6 +256,7 @@ export const App: React.FC = () => {
           </div>
         </div>
       </footer>
+      )}
 
       {/* Modals */}
       <CameraModal

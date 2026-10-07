@@ -29,6 +29,8 @@ export default {
         space: ['Space Grotesk', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
         caveat: ['Caveat', 'cursive'],
+        script: ['"Alex Brush"', 'cursive'],
+        editorial: ['"Playfair Display"', 'Georgia', 'serif'],
       },
       animation: {
         'shimmer': 'shimmer 2.2s linear infinite',

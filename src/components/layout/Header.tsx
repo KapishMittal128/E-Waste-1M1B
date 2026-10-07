@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { ShieldCheck, MapPin, AlertTriangle } from 'lucide-react';
 import { GWALIOR_LOCALITIES } from '../../data/recyclers';
-import { Badge } from '../ui/Badge';
 
 interface HeaderProps {
   onNavigateHome?: () => void;
@@ -19,43 +18,45 @@ export const Header: React.FC<HeaderProps> = ({
   const [showLocalityMenu, setShowLocalityMenu] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-zinc-950/70 backdrop-blur-2xl border-b border-white/10 shadow-lg">
+    <header className="absolute top-0 inset-x-0 z-40 w-full bg-black/20 backdrop-blur-xl border-b border-white/10 shadow-sm select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="flex items-center justify-between h-14 sm:h-16">
           
-          {/* Brand Logo */}
+          {/* Left: Desktop OS Brand Capsule */}
           <div 
-            className="flex items-center gap-3 cursor-pointer group select-none"
+            className="flex items-center gap-2.5 cursor-pointer group select-none"
             onClick={onNavigateHome}
           >
-            <div className="relative w-10 h-10 rounded-2xl bg-zinc-900 border border-white/10 flex items-center justify-center shadow-lg group-hover:border-emerald-500/50 transition-all">
-              <div className="w-4 h-4 border-2 border-emerald-400 rounded-sm rotate-45 flex items-center justify-center">
+            <div className="relative w-8 h-8 rounded-xl bg-black/40 border border-white/20 flex items-center justify-center shadow-md group-hover:border-emerald-400/60 transition-all">
+              <div className="w-3.5 h-3.5 border-2 border-emerald-400 rounded-xs rotate-45 flex items-center justify-center">
                 <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full" />
               </div>
-              <div className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-400 rounded-full border-2 border-black animate-pulse" />
+              <div className="absolute -top-0.5 -right-0.5 w-2 h-2 bg-emerald-400 rounded-full border border-black animate-pulse" />
             </div>
             
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="font-extrabold text-xl tracking-tight text-white group-hover:text-emerald-300 transition-colors font-space">
-                  EWaste <span className="text-zinc-400 font-bold">Off</span>
-                </span>
-                <Badge variant="cyan" className="text-[10px] tracking-wider uppercase">
-                  Gwalior
-                </Badge>
-              </div>
-              <p className="text-[11px] text-zinc-400 hidden sm:block font-medium">
-                Autonomous On-Device E-Waste Triage & Recycler Locator
-              </p>
+            <div className="flex items-center gap-2">
+              <span className="font-space font-black text-sm sm:text-base tracking-tight text-white group-hover:text-emerald-300 transition-colors uppercase">
+                EWaste <span className="text-zinc-300 font-semibold">Off</span>
+              </span>
+              <span className="px-2 py-0.5 rounded-full bg-white/10 border border-white/15 text-[10px] font-mono text-emerald-300 uppercase tracking-wider font-semibold">
+                GWALIOR
+              </span>
             </div>
           </div>
 
-          {/* Right Action Controls: Locality & Emergency Protocol */}
+          {/* Center: Minimalist Tracked Brand Stamp (Exact CREATIE aesthetic from Image 1) */}
+          <div className="hidden md:flex items-center justify-center pointer-events-none select-none">
+            <span className="font-space font-black tracking-[0.35em] text-white/95 text-xs sm:text-sm uppercase drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">
+              CREATIE · ECOEDGENET
+            </span>
+          </div>
+
+          {/* Right: Mac/Laptop Menu Bar Controls (Locality & Hazard Protocol) */}
           <div className="flex items-center gap-2">
             <div className="relative">
               <button
                 onClick={() => setShowLocalityMenu(!showLocalityMenu)}
-                className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-zinc-900/80 border border-white/10 hover:border-white/30 text-xs text-zinc-200 transition-all shadow-sm font-mono"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-black/40 backdrop-blur-xl border border-white/20 hover:border-white/40 text-xs text-white transition-all shadow-sm font-mono"
                 title="Change Gwalior Locality"
               >
                 <MapPin className="w-3.5 h-3.5 text-emerald-400" />
@@ -92,10 +93,10 @@ export const Header: React.FC<HeaderProps> = ({
 
             <button
               onClick={onOpenHazardGuide}
-              className="p-2.5 rounded-xl bg-zinc-900/80 hover:bg-zinc-800 border border-white/10 hover:border-orange-500/50 text-zinc-300 hover:text-orange-400 transition-all shadow-sm"
+              className="p-2 rounded-xl bg-black/40 hover:bg-black/60 backdrop-blur-xl border border-white/20 hover:border-rose-400/60 text-zinc-200 hover:text-rose-400 transition-all shadow-sm"
               title="Hazardous E-Waste Safety Protocol"
             >
-              <AlertTriangle className="w-4 h-4" />
+              <AlertTriangle className="w-3.5 h-3.5" />
             </button>
           </div>
 
